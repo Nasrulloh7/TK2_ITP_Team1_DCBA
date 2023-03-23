@@ -14,10 +14,9 @@ import java.util.Scanner;
 public class deretBilangan {
 
     public static void main(String[] args) {
-        
+        Scanner scanner = new Scanner(System.in);
         Scanner input = new Scanner(System.in);
         String nama, nim;
-
         
         // Nomor 1 //
         // Meminta input nama dari user
@@ -33,6 +32,11 @@ public class deretBilangan {
         
         
         // Nomor 2, Mulai di sini! //
+        do {
+            System.out.print("Masukkan NIM anda [harus 10 karakter]: ");
+            nim = scanner.next();
+        } while(nim.length() != 10 || !nim.matches("[0-9]+"));
+
         
         // Nomor 2 //
         
@@ -40,7 +44,7 @@ public class deretBilangan {
         System.out.println("\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
         
         System.out.println("Registrasi Sukses..");
-        System.out.printf("Selamat datang %s [NIM: ] \n", nama);
+        System.out.printf("Selamat datang %s [NIM: %s ] \n", nama,nim);
         
         System.out.println("\nMari belajar macam-macam deret bilangan..\n");
     }
