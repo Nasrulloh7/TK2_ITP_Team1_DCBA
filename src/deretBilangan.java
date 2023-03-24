@@ -16,7 +16,7 @@ public class deretBilangan {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Scanner input = new Scanner(System.in);
-        String nama, nim;
+        String nama, nim, repetisi;
         
         // Nomor 1 //
         // Meminta input nama dari user
@@ -47,6 +47,32 @@ public class deretBilangan {
         System.out.printf("Selamat datang %s [NIM: %s ] \n", nama,nim);
         
         System.out.println("\nMari belajar macam-macam deret bilangan..\n");
+        
+        //====Nomor 5 Mulai dari sini//
+        do {
+        System.out.print("Anda ingin mengulang [y/t]: ");
+        repetisi = input.next();
+            if("t".equals(repetisi) || "T".equals(repetisi)
+                || "y".equals(repetisi) || "Y".equals(repetisi))
+                    {
+                         if("t".equals(repetisi) || "T".equals(repetisi))
+                                {
+                                val_stop=true;
+                                }
+                                val_repetisi=true;
+                                }
+                        else
+                                {
+                                System.out.println("\nKarakter Nama Tidak Sesuai Ketentuan"); 
+                                }
+                    }
+        while(!val_repetisi);
+            System.out.println("\n\n\n\n");
+                    }
+        while(!val_stop);
+    //====Nomor 5 Selesai//
+
+        
     }
     
 }
