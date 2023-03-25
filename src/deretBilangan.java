@@ -18,6 +18,9 @@ public class deretBilangan {
         Scanner input = new Scanner(System.in);
         String nama, nim, repetisi;
         int angka = 0;
+        int hasil_genap = 0;
+        int hasil_ganjil = 0;
+        int bilangan1, bilangan2, hasil_fibonacci;        
         
         // Nomor 1 //
         // Meminta input nama dari user
@@ -63,6 +66,42 @@ public class deretBilangan {
 
         // Nomor 3 selesai //
         
+
+         // Nomor 4 //
+ 
+         System.out.println (angka + " Bilangan Genap : ");
+         for (int a=2; a<=angka*2; a++){
+             if (a%2==0) {
+                 System.out.print(a+" ");
+                 hasil_genap = hasil_genap + a;
+             } 
+         }
+         System.out.print("\nHasil ialah :  " + hasil_genap);
+ 
+ 
+         System.out.println ("\n" + angka + " Bilangan Ganjil : ");
+         for (int a=1; a<=angka*2; a++){
+             if (a%2!=0) {
+                 System.out.print(a+" ");
+                 hasil_ganjil = hasil_ganjil + a;
+             } 
+         }
+         System.out.print("\nHasil ialah :  " + hasil_ganjil);
+ 
+         System.out.println ("\n" + angka + " Bilangan Fibonacci : ");
+         bilangan1 = 1;
+         bilangan2 = 1;
+         hasil_fibonacci = 0;
+         for (int a=1; a<=angka; a++){
+             System.out.print(bilangan1+", ");
+             hasil_fibonacci = bilangan1 + bilangan2;
+             bilangan2 = bilangan1;
+             bilangan1 = hasil_fibonacci;
+         }
+         
+         // Nomor 4 Selesai //
+
+
         //====Nomor 5 Mulai dari sini//
         do {
         System.out.print("Anda ingin mengulang [y/t]: ");
