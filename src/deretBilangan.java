@@ -17,6 +17,7 @@ public class deretBilangan {
         Scanner scanner = new Scanner(System.in);
         Scanner input = new Scanner(System.in);
         String nama, nim, repetisi;
+        int angka = 0;
         
         // Nomor 1 //
         // Meminta input nama dari user
@@ -47,6 +48,20 @@ public class deretBilangan {
         System.out.printf("Selamat datang %s [NIM: %s ] \n", nama,nim);
         
         System.out.println("\nMari belajar macam-macam deret bilangan..\n");
+        
+        System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+        
+        // Nomor 3 //
+        do {
+            System.out.print("Masukkan Sembarang Angka (5..20) :");
+            angka = scanner.nextInt();
+        } while (angka < 5 || angka > 20);
+        
+        System.out.println("\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
+        System.out.println ("Deret Bilangan");
+        System.out.println ("##############\n");
+
+        // Nomor 3 selesai //
         
         //====Nomor 5 Mulai dari sini//
         do {
