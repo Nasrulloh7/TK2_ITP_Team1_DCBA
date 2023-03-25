@@ -20,7 +20,7 @@ public class deretBilangan {
         int angka = 0;
         int hasil_genap = 0;
         int hasil_ganjil = 0;
-        int bilangan1, bilangan2, hasil_fibonacci;        
+        int bilangan1, bilangan2, hasil_fibonacci,sum_fibonacci;        
         
         // Nomor 1 //
         // Meminta input nama dari user
@@ -92,12 +92,15 @@ public class deretBilangan {
          bilangan1 = 1;
          bilangan2 = 1;
          hasil_fibonacci = 0;
+         sum_fibonacci = 0;
          for (int a=1; a<=angka; a++){
              System.out.print(bilangan1+", ");
              hasil_fibonacci = bilangan1 + bilangan2;
              bilangan2 = bilangan1;
              bilangan1 = hasil_fibonacci;
+             sum_fibonacci = sum_fibonacci + hasil_fibonacci;             
          }
+         System.out.print("\nHasil ialah :  " + sum_fibonacci);         
          
          // Nomor 4 Selesai //
 
